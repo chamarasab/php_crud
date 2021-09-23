@@ -76,7 +76,7 @@
                             <td> <?php echo $record['course']?> </td>
                             <td style="text-align:right"> 
                                 <a href="http://localhost/course/delete.php?id=<?php echo $record['id']?>" class="btn btn-danger">Delete</a>
-                                <a href="http://" class="btn btn-warning">Update</a>
+                                <a href="http://localhost/course/update.php?id=<?php echo $record['id']?>" class="btn btn-warning">Update</a>
                                 <!--<input type="button" name="Delete" class="btn btn-danger" value="Delete"/>
                                 <button type="button" class="btn btn-warning">Update</button> -->
                             </td>

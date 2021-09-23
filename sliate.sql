@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Sep 23, 2021 at 08:59 AM
+-- Generation Time: Sep 23, 2021 at 12:54 PM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -34,22 +34,27 @@ CREATE TABLE IF NOT EXISTS `students` (
   `address` varchar(50) NOT NULL,
   `contact` varchar(50) NOT NULL,
   `course` varchar(50) NOT NULL,
+  `password` int(8) NOT NULL DEFAULT '123',
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=13 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=33 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `students`
 --
 
-INSERT INTO `students` (`id`, `name`, `address`, `contact`, `course`) VALUES
-(1, 'Chamara', 'Polgahawela', 'chamara@sliate.com', 'HNDIT'),
-(2, 'Malan', 'Melsiripura', 'malan@sliate.com', 'HNDIT'),
-(3, 'Sadun', 'Pothuhera', 'malan@sliate.com', 'HNDIT'),
-(4, 'Sanika', 'Rambukkana', 'sanika@sliate.com', 'HNDIT'),
-(5, 'Ishara', 'Melsiripura', 'ishara@sliate.com', 'HNDIT'),
-(10, 'Manishi', 'Alawwa', 'mani@abc.com', 'HNDIT'),
-(11, 'Wara', 'Kegalle', 'wara@abc.com', 'HNDIT'),
-(12, 'Waruna', 'Kurunegala', 'waruna@abc.com', 'HNDIT');
+INSERT INTO `students` (`id`, `name`, `address`, `contact`, `course`, `password`) VALUES
+(17, 'Chamara', 'Polgahawela', 'chamara@sliate.com', 'HNDIT', 123),
+(16, 'Chaduni', 'Kegalle', 'chaduni@abc.com', 'HNDIT', 123456),
+(23, 'Wara', 'Kegalle', 'wara@abc.com', 'HNDIT', 123),
+(24, 'Waruna', 'Kurunegala', 'waruna@abc.com', 'HNDIT', 123),
+(25, 'Chamara', 'Polgahawela', 'chamara@sliate.com', 'HNDIT', 123),
+(26, 'Malan', 'Melsiripura', 'malan@sliate.com', 'HNDIT', 123),
+(27, 'Sadun', 'Pothuhera', 'malan@sliate.com', 'HNDIT', 123),
+(28, 'Sanika', 'Rambukkana', 'sanika@sliate.com', 'HNDIT', 123),
+(29, 'Ishara', 'Melsiripura', 'ishara@sliate.com', 'HNDIT', 123),
+(30, 'Manishi', 'Alawwa', 'mani@abc.com', 'HNDIT', 123),
+(31, 'Wara', 'Kegalle', 'wara@abc.com', 'HNDIT', 123),
+(32, 'Waruna', 'Kurunegala', 'waruna@abc.com', 'HNDIT', 123);
 
 -- --------------------------------------------------------
 
